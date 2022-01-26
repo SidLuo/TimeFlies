@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1045473177304",
+    "project_id": "time-flies-c2ede",
+    "storage_bucket": "time-flies-c2ede.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045473177304:android:87257d7211d15c5bdeb1ad",
+        "android_client_info": {
+          "package_name": "comp5216.sydney.edu.au.timefiles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045473177304-pksgp5pufbuauvgvp1itehbpi0r87rvg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL3yzQnghmhImdtNyNYRBDBPni0rjPjVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045473177304-pksgp5pufbuauvgvp1itehbpi0r87rvg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
