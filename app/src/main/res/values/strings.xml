@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Time Flies</string>
+    <string name="title_activity_log_in_register">LogInRegister</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="privacy_title">Privacy Protection</string>
+    <string name="privacy_content">Reminder: After you click yes, your usage data, including planned/actual using time and your username, can be seen by all the users. Please confirm if you allow us to public your personal information.</string>
+</resources>

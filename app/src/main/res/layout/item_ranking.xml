@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="?android:attr/textSelectHandle"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:text="1"
+        android:textColor="@color/common_google_signin_btn_text_light_focused"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rank"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toLeftOf="@+id/completion_rate"
+        android:layout_toRightOf="@+id/rank"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/common_google_signin_btn_text_light_pressed"
+        tools:text="User_1" />
+
+    <TextView
+        android:id="@+id/time_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name"
+        android:layout_alignLeft="@+id/user_name"
+        tools:text="10/10" />
+
+    <TextView
+        android:id="@+id/completion_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        tools:text="100%" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="36dp"
+        >
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usage Rank"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:layout_marginBottom="4dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Rank in: "
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/currentTime"
+            android:textAlignment="viewEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update in: " />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_ranking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:background="@android:color/white"
+        tools:listitem="@layout/item_ranking" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:onClick="onUploadMine"
+        android:id="@+id/upload_btn"
+        android:text="UPLOAD MY DATA"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/recycler_ranking"
+        android:layout_alignTop="@+id/recycler_ranking"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
